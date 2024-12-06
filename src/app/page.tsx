@@ -1,21 +1,16 @@
-// src/components/Button.tsx
-"use client"; // This marks this component as a Client Component, allowing event handling
+// src/app/page.tsx (Client Component)
+"use client"; // Add this to make this component a Client Component
 
-import React from "react";
+import Button from "../components/Button";
 
-// Define the props interface to type the button's label and click handler
-interface ButtonProps {
-  label: string;
-  onClick: () => void;
-}
+export default function Page() {
+  const handleClick = () => {
+    alert("Button clicked!");
+  };
 
-// Define the Button component that takes `label` and `onClick` as props
-const Button: React.FC<ButtonProps> = ({ label, onClick }) => {
   return (
-    <button onClick={onClick} className="btn btn-primary">
-      {label}
-    </button>
+    <div>
+      <Button label="Click Me" onClick={handleClick} />
+    </div>
   );
-};
-
-export default Button;
+}

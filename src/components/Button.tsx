@@ -1,11 +1,11 @@
 // src/components/Button.tsx
-"use client"; // Add this at the top to make this a Client Component
+"use client"; // Add this at the top to mark this component as a Client Component.
 
 import React from "react";
 
-interface ButtonProps {
+export interface ButtonProps {
   label: string;
-  onClick: () => void;
+  onClick: () => void; // onClick function passed as a prop.
 }
 
 const Button: React.FC<ButtonProps> = ({ label, onClick }) => {
