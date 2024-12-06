@@ -1,0 +1,157 @@
+.testimonialSection {
+  padding: 4rem 2rem;
+  background-color: #f7f7f7;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.heading h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.heading h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.mainContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.leftSide {
+  flex: 1;
+  padding: 2rem;
+}
+
+.leftSide h3 {
+  font-size: 2rem;
+  color: #f66f1e;
+  margin-bottom: 1rem;
+}
+
+.leftSide h4 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.leftSide p {
+  color: #777;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.hireButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #f66f1e;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.hireButton:hover {
+  background-color: #d65b1e; /* Darker shade */
+}
+
+.hireButton .icon {
+  margin-right: 10px;
+}
+
+.rightSide {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.testimonialCard {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.profile {
+   display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profileImage {
+    width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.profileDetails h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.profileDetails .role {
+  color: #f66f1e;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.role {
+  font-size: 14px;
+  color: gray;
+}
+
+.testimonialText {
+  font-size: 1rem;
+color: #555;
+   font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+   margin-top: 10px;
+}
+
+.star {
+  color: #f66f1e;
+  margin-right: 5px;
+}
+
+.ratingCount {
+  font-size: 1rem;
+  color: #777;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.arrow {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #f66f1e;
+}
+.arrow:hover {
+  color: #d65b1e;
+}

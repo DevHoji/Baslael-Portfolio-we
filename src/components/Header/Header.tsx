@@ -1,6 +1,6 @@
 "use client"; // Ensures this is a client-side component
 
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import styles from "./Header.module.css";
 import { FaBars, FaTimes } from "react-icons/fa"; // Import icons for burger and cancel
 
@@ -8,9 +8,49 @@ const Header = () => {
   const [activeTab, setActiveTab] = useState("home");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  // Create refs for each section
+  const homeRef = useRef<HTMLDivElement>(null);
+  const aboutRef = useRef<HTMLDivElement>(null);
+  const resumeRef = useRef<HTMLDivElement>(null);
+  const servicesRef = useRef<HTMLDivElement>(null);
+  const portfolioRef = useRef<HTMLDivElement>(null);
+  const testimonialRef = useRef<HTMLDivElement>(null);
+  const blogRef = useRef<HTMLDivElement>(null);
+  const contactRef = useRef<HTMLDivElement>(null);
+
   const handleTabClick = (tab: string) => {
     setActiveTab(tab);
     setIsMenuOpen(false); // Close menu when a link is clicked
+
+    // Scroll to the respective section
+    switch (tab) {
+      case "home":
+        homeRef.current?.scrollIntoView({ behavior: "smooth" });
+        break;
+      case "about":
+        aboutRef.current?.scrollIntoView({ behavior: "smooth" });
+        break;
+      case "resume":
+        resumeRef.current?.scrollIntoView({ behavior: "smooth" });
+        break;
+      case "services":
+        servicesRef.current?.scrollIntoView({ behavior: "smooth" });
+        break;
+      case "portfolio":
+        portfolioRef.current?.scrollIntoView({ behavior: "smooth" });
+        break;
+      case "testimonial":
+        testimonialRef.current?.scrollIntoView({ behavior: "smooth" });
+        break;
+      case "blog":
+        blogRef.current?.scrollIntoView({ behavior: "smooth" });
+        break;
+      case "contact":
+        contactRef.current?.scrollIntoView({ behavior: "smooth" });
+        break;
+      default:
+        break;
+    }
   };
 
   const toggleMenu = () => {
@@ -51,7 +91,7 @@ const Header = () => {
           ].map((tab) => (
             <li key={tab}>
               <a
-                href={`#${tab}`}
+                href="#"
                 onClick={() => handleTabClick(tab)}
                 className={activeTab === tab ? styles.active : ""}
               >

@@ -1,0 +1,114 @@
+/* src/components/Services/Service.module.css */
+
+.servicesSection {
+  padding: 50px 20px;
+  background-color: #f4f7fb; /* Light background color */
+  text-align: center;
+}
+
+.titleContainer {
+  margin-bottom: 40px;
+}
+
+.sectionTitle {
+  font-size: 40px;
+  font-weight: bold;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f44336; /* Attractive color for "What I Do?" */
+  margin-top: 10px;
+}
+
+.verticalLine {
+  width: 60px;
+  height: 3px;
+  margin: 20px auto;
+  background-color: #f44336; /* Color for the line */
+}
+
+.servicesContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.serviceBox {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.serviceBox:hover {
+  background-color: #ffeb3b; /* Color change on hover for the first box */
+}
+
+.serviceBox:nth-child(2):hover {
+  background-color: #8bc34a; /* Color change on hover for the second box */
+}
+
+.serviceBox:nth-child(3):hover {
+  background-color: #03a9f4; /* Color change on hover for the third box */
+}
+
+.icon {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.serviceTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.serviceDescription {
+  font-size: 16px;
+  color: #555;
+}
+
+.readMore {
+  margin-top: 10px;
+}
+
+.readMore hr {
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+.readMore button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.readMore button:hover {
+  background-color: #d32f2f;
+}
+
+@media (max-width: 768px) {
+  .servicesContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .serviceBox {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}

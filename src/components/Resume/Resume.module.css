@@ -1,0 +1,235 @@
+/* Main Section */
+.resumeSection {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+/* Title Section */
+.titleContainer {
+  position: relative;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.myResume {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.backgroundText {
+  font-size: 5rem;
+  opacity: 0.15;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+
+/* Resume Section */
+.resumeBoxesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px; /* Increased gap between columns */
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Columns */
+.column {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align boxes to the left of each column */
+  gap: 40px;
+  margin-top: 20px; /* Added margin top to all lists */
+}
+
+/* Vertical Line and Circles */
+.verticalLine {
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background-color: pink;
+  left: -30px; /* Added gap between vertical line and boxes */
+  transform: translateX(-50%);
+  margin-top: 100px;
+}
+
+.circle {
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  background-color: pink;
+  border-radius: 50%;
+  left: -7px; /* Ensures the circle is centered on the line */
+}
+
+/* Resume Boxes */
+.resumeBox {
+  background-color: white;
+  padding: 40px; /* Increased padding for larger boxes */
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 12px; /* Slightly more rounded corners */
+  width: 400px; /* Increased box width */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 100px;
+}
+
+.resumeBox:hover {
+  transform: translateY(-10px); /* Moves the box up slightly */
+  box-shadow: 0px 25px 35px rgba(0, 0, 0, 0.2); /* Enhances shadow on hover */
+}
+
+/* Text Styles */
+.resumeTitle {
+  font-size: 26px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.degree {
+  font-size: 22px;
+  color: black;
+  margin-bottom: 8px;
+}
+
+.description {
+  font-size: 18px;
+  color: #555;
+}
+/* Skills Section */
+.skillsSection {
+  margin-top: 100px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.mySkills {
+  font-size: 36px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+  z-index: 2;
+  position: relative;
+    margin-bottom: 200px;
+}
+
+.skillsList {
+  display: flex;
+  justify-content: space-between; /* Adjust spacing to divide equally */
+  flex-wrap: wrap; /* Ensure items wrap on small screens */
+  gap: 30px;
+  margin-top: 50px;
+}
+
+/* Skill Item */
+.skillItem {
+  display: flex;
+  align-items: center;
+  width: calc(33.33% - 20px); /* Divide items equally for large screens */
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.skillName {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  width: 120px;
+  text-align: left;
+}
+
+.progressContainer {
+  flex: 1;
+  height: 10px;
+  background: #e0e0e0;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.progressBar {
+  height: 100%;
+  background: linear-gradient(90deg, #f66f1e, #f9a601);
+  border-radius: 5px;
+}
+
+.percentage {
+  font-size: 14px;
+  color: black;
+  width: 50px;
+  text-align: right;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .skillItem {
+    width: calc(50% - 15px); /* Two items per row on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .skillItem {
+    width: 100%; /* Full width on small screens */
+  }
+}
+/* Stats Section */
+.statsSection {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLvP8GLLrieb_k9FWcDyW_qh-aG688dOG-3A&s'); /* Tech/coding image */
+  background-size: 100% auto; /* Cover full width, height will auto scale */
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+  min-height: 300px; /* Minimum height of the section */
+}
+
+
+
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 20px;
+}
+
+.number {
+  font-size: 48px;
+  font-weight: bold;
+  color: #4caf50; /* Green color for numbers */
+}
+
+.label {
+  font-size: 18px;
+  font-weight: normal;
+  color: black; /* White for labels */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .statsSection {
+    flex-direction: column;
+  }
+
+  .statItem {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+

@@ -25,7 +25,7 @@ const Home = () => {
           <div className={styles.animatedCircle}>
             <div className={styles.innerCircle}></div>
             <img
-              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=faces&fit=crop&w=500&h=500&q=80"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF2yaox2cALIq_yyd-9qEyovEsficJr7X9QQ&s"
               alt="Your Image"
               className={styles.image}
             />

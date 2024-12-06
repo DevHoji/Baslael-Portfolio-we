@@ -1,19 +1,25 @@
-// src/pages/Page.tsx (or App.tsx)
+// src/pages/Page.tsx
 import React from "react";
 import Home from "../components/Home/Home"; // Importing the Home component
 import About from "../components/About/About";
-import Projects from "../components/Projects/Projects";
-import Contact from "../components/Contact/Contact";
-import Footer from "../components/Footer/Footer";
+import Services from "../components/Services/Service"; // Adjust the path accordingly if needed
+import Portfolio from "../components/Portfolio/Portfolio"; // Import the Portfolio component
+
+import Testimonial from "../components/Testimonial/Testimonial"
+import Blog from "../components/Blog/Blog"
+import Resume from "../components/Resume/Resume"; // Import the Resume component
 
 const Page = () => {
   return (
     <div>
       <Home /> {/* Add Home component here */}
       <About />
-      <Projects />
-      <Contact />
-      <Footer />
+      <Resume /> {/* Add Resume component here */}
+      <Services /> {/* Add Services component here */}
+      <Portfolio /> {/* Add Portfolio component here */}
+      <Testimonial />
+      <Blog />
+     
     </div>
   );
 };
