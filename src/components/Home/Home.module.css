@@ -1,0 +1,156 @@
+/* src/components/Home/Home.module.css */
+
+/* The main container for the home section */
+/* The main container for the home section */
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: white;
+  font-family: 'Poppins', sans-serif; /* Apply the Poppins font */
+  margin-top: 80px; /* Add margin-top to create a gap between the header and home section */
+}
+
+/* Responsive Styles for smaller screens */
+@media (max-width: 768px) {
+  .home {
+    margin-top: 100px; /* Larger gap on small screens */
+  }
+}
+
+
+/* Left part styles */
+.leftPart {
+  flex: 1;
+  padding-right: 40px;
+}
+
+/* Right part styles */
+.rightPart {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Text section on the left side */
+.textSection h1, .textSection h3 {
+  font-size: 24px;
+  color: #FF6A13; /* Sunset Orange for "Hello, I'm" and "I'm a Web Developer" */
+  text-align: left;
+}
+
+/* Style for the name text (middle) */
+.name {
+  font-size: 40px;
+  font-weight: 700;
+  color: #1E90FF; /* Deep Sky Blue for the name */
+  text-align: left;
+  margin-left: 20px; /* Shift the name slightly to the right */
+}
+
+/* Paragraph style */
+.paragraph {
+  font-size: 16px;
+  color: #708090; /* Slate Gray for paragraph text */
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+/* Contact button style */
+.contactButton {
+  background-color: #32CD32; /* Vibrant Emerald Green for the button */
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px; /* Smooth curly curve */
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contactButton:hover {
+  background-color: #228B22; /* Darker green on hover */
+  transform: translateY(-3px); /* Slightly lift the button */
+}
+/* Animated visual container */
+/* Adjusted styles for the animated visual */
+/* Adjusted styles for the animated visual */
+.animatedVisual {
+  position: relative;
+  width: 400px; /* Increased width for a larger visual area */
+  height: 400px; /* Increased height for a larger visual area */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Outer circle */
+.animatedCircle {
+  position: absolute;
+  width: 350px; /* Increased size for the larger outer circle */
+  height: 350px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, rgba(255, 182, 193, 0.4), rgba(255, 105, 180, 0.4));
+  animation: waterGlowOuter 6s infinite ease-in-out;
+}
+
+/* Inner circle */
+.innerCircle {
+  position: absolute;
+  width: 270px; /* Increased size for the larger inner circle */
+  height: 270px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, rgba(255, 105, 180, 0.6), rgba(255, 182, 193, 0.6));
+  animation: waterGlowInner 6s infinite ease-in-out;
+}
+
+/* Image inside the circle */
+.image {
+  width: 220px; /* Ensured the image size matches the larger circle */
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Keyframes for the outer circle's glowing effect */
+@keyframes waterGlowOuter {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 30px rgba(255, 182, 193, 0.6), 0 0 60px rgba(255, 182, 193, 0.4);
+  }
+  50% {
+    transform: scale(1.15);
+    box-shadow: 0 0 70px rgba(255, 182, 193, 0.8), 0 0 90px rgba(255, 105, 180, 0.6);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 30px rgba(255, 182, 193, 0.6), 0 0 60px rgba(255, 182, 193, 0.4);
+  }
+}
+
+/* Keyframes for the inner circle's glowing effect */
+@keyframes waterGlowInner {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.5), 0 0 40px rgba(255, 105, 180, 0.4);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 50px rgba(255, 105, 180, 0.8), 0 0 70px rgba(255, 182, 193, 0.6);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.5), 0 0 40px rgba(255, 105, 180, 0.4);
+  }
+}
+

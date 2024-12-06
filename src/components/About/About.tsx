@@ -9,13 +9,13 @@ const About = () => {
     <section id="about" className={styles.about}>
       <div className={styles.profile}>
         {/* Use <Image /> instead of <img> */}
-        <Image
+        {/* <Image
           src="/images/profile.jpg"
           alt="My Profile"
           className={styles.profileImage}
           width={500}
           height={500}
-        />
+        /> */}
       </div>
       <div className={styles.details}>
         <h2>About Me</h2>
