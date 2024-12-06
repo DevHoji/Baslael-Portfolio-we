@@ -1,16 +1,20 @@
 "use client"; // Make sure this is a client component
 
 import React from "react";
+import Image from "next/image"; // Import Image from next/image
 import styles from "./About.module.css";
 
 const About = () => {
   return (
     <section id="about" className={styles.about}>
       <div className={styles.profile}>
-        <img
+        {/* Use <Image /> instead of <img> */}
+        <Image
           src="/images/profile.jpg"
           alt="My Profile"
           className={styles.profileImage}
+          width={500}
+          height={500}
         />
       </div>
       <div className={styles.details}>
