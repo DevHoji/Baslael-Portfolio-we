@@ -1,4 +1,10 @@
-/* styles/globals.css */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ecf0f1;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}

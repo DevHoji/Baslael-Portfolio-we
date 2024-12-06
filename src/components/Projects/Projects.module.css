@@ -1,0 +1,22 @@
+.projects {
+  background-color: #fff;
+  padding: 50px;
+}
+
+.projectList {
+  display: flex;
+  gap: 30px;
+}
+
+.projectItem {
+  width: 45%;
+}
+
+.projectItem img {
+  width: 100%;
+}
+
+.projectItem h3 {
+  font-size: 24px;
+  margin-top: 10px;
+}

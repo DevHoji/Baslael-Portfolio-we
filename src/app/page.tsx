@@ -1,16 +1,14 @@
-// src/app/page.tsx (Client Component)
-"use client"; // Add this to make this component a Client Component
-
-import Button from "../components/Button";
+import React from "react";
+import About from "../components/About/About";
+import Projects from "../components/Projects/Projects";
+import Contact from "../components/Contact/Contact";
 
 export default function Page() {
-  const handleClick = () => {
-    alert("Button clicked!");
-  };
-
   return (
     <div>
-      <Button label="Click Me" onClick={handleClick} />
+      <About />
+      <Projects />
+      <Contact />
     </div>
   );
 }
