@@ -33,7 +33,7 @@ const Resume = () => {
           </div>
 
           <div className={styles.resumeBox}>
-            <h3 className={styles.resumeTitle}>Bachelor&apos;s Degree</h3>
+            <h3 className={styles.resumeTitle}>Bachelor&#39;s Degree</h3>
             <h4 className={styles.degree}>University of Addis Ababa</h4>
             <p className={styles.description}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
@@ -42,7 +42,7 @@ const Resume = () => {
           </div>
 
           <div className={styles.resumeBox}>
-            <h3 className={styles.resumeTitle}>Master's Degree</h3>
+            <h3 className={styles.resumeTitle}>Master&#39;s Degree</h3>
             <h4 className={styles.degree}>Harvard University</h4>
             <p className={styles.description}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
@@ -61,7 +61,7 @@ const Resume = () => {
 
           {[...Array(3)].map((_, index) => (
             <div key={index} className={styles.resumeBox}>
-              <h3 className={styles.resumeTitle}>Bachelor's Degree</h3>
+              <h3 className={styles.resumeTitle}>Bachelor&#39;s Degree</h3>
               <h4 className={styles.degree}>Sample University</h4>
               <p className={styles.description}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
@@ -101,26 +101,6 @@ const Resume = () => {
               <div className={styles.percentage}>{item.percentage}%</div>
             </div>
           ))}
-        </div>
-      </div>
-
-      {/* New Stats Section */}
-      <div className={styles.statsSection}>
-        <div className={styles.statItem}>
-          <div className={styles.number}>3K</div>
-          <div className={styles.label}>Projects Done</div>
-        </div>
-        <div className={styles.statItem}>
-          <div className={styles.number}>98+</div>
-          <div className={styles.label}>Happy Clients</div>
-        </div>
-        <div className={styles.statItem}>
-          <div className={styles.number}>13</div>
-          <div className={styles.label}>Awards Won</div>
-        </div>
-        <div className={styles.statItem}>
-          <div className={styles.number}>10+</div>
-          <div className={styles.label}>Years Experience</div>
         </div>
       </div>
     </section>
