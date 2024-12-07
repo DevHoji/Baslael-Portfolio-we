@@ -13,11 +13,12 @@ const About = () => {
           <div className={styles.shadowFrame}>
             <div className={styles.dots}></div>
             <Image
-              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=faces&fit=crop&w=500&h=700&q=80"
+              src="/images/html-image.png"
               alt="Profile"
               className={styles.profileImage}
               width={500}
               height={700}
+              layout="responsive" // Ensures responsiveness
             />
           </div>
         </div>
@@ -28,7 +29,7 @@ const About = () => {
         <h3 className={styles.biography}>BIOGRAPHY</h3>
         <h2 className={styles.whoAmI}>Who am I?</h2>
         <h4 className={styles.aboutMe}>About Me</h4>
-        <p className={styles.subDetails}>Baslalel Workineh's Details</p>
+        <p className={styles.subDetails}>Baslael Workineh&apos;s Details</p>
         <p className={styles.loremText}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet
           ligula vel lorem pharetra tincidunt. Quisque at eros ac dui efficitur

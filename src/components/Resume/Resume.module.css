@@ -183,7 +183,7 @@
 }
 /* Stats Section */
 .statsSection {
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLvP8GLLrieb_k9FWcDyW_qh-aG688dOG-3A&s'); /* Tech/coding image */
+  background-image: url('/images/html-image.png'); /* Tech/coding image */
   background-size: 100% auto; /* Cover full width, height will auto scale */
   background-position: center;
   background-repeat: no-repeat;
@@ -217,7 +217,7 @@
 .label {
   font-size: 18px;
   font-weight: normal;
-  color: black; /* White for labels */
+  color: white; /* White for labels */
 }
 
 /* Responsive Design */

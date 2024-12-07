@@ -15,69 +15,61 @@ const Portfolio = () => {
       id: 1,
       category: "design",
       title: "Project 1",
-      imgUrl:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl6bK7FrqpBvBNFAU4PSC4oG-kt9Al5B90Xg&s",
+      imgUrl: "/images/html-image.png",
     },
     {
       id: 2,
       category: "mobile",
       title: "Mobile App 1",
-      imgUrl:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPWF5IorBoaR321bBBzOAMLJDMBlOLWG7KIw&s",
+      imgUrl: "/images/html-image.png",
     },
     {
       id: 3,
       category: "web",
       title: "Web App 1",
-      imgUrl:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCKLQfbUFPrYvuR9-YY6N0FxjEPerAr-Y8xw&s",
+      imgUrl: "/images/html-image.png",
     },
     {
       id: 4,
       category: "school",
       title: "School Project 1",
-      imgUrl:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl6bK7FrqpBvBNFAU4PSC4oG-kt9Al5B90Xg&s",
+      imgUrl: "/images/html-image.png",
     },
     {
       id: 5,
       category: "personal",
       title: "Personal Project 1",
-      imgUrl:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPWF5IorBoaR321bBBzOAMLJDMBlOLWG7KIw&s",
+      imgUrl: "/images/html-image.png",
     },
     {
       id: 6,
       category: "design",
       title: "Design Project 2",
-      imgUrl:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCKLQfbUFPrYvuR9-YY6N0FxjEPerAr-Y8xw&s",
+      imgUrl: "/images/html-image.png",
     },
     {
       id: 7,
       category: "mobile",
       title: "Mobile App 2",
-      imgUrl:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCKLQfbUFPrYvuR9-YY6N0FxjEPerAr-Y8xw&s",
+      imgUrl: "/images/html-image.png",
     },
     {
       id: 8,
       category: "web",
       title: "Web App 2",
-      imgUrl:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPWF5IorBoaR321bBBzOAMLJDMBlOLWG7KIw&s",
+      imgUrl: "/images/html-image.png",
     },
     {
       id: 9,
       category: "personal",
       title: "Personal Project 2",
-      imgUrl:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCKLQfbUFPrYvuR9-YY6N0FxjEPerAr-Y8xw&s",
+      imgUrl: "/images/html-image.png",
     },
   ];
 
   return (
     <section className={styles.portfolioSection}>
+      {/* Header Section */}
       <div className={styles.textSection}>
         <h2 className={styles.latestWork}>Latest Work</h2>
         <h3 className={styles.portfolioText}>PORTFOLIO</h3>
@@ -98,6 +90,7 @@ const Portfolio = () => {
         </div>
       </div>
 
+      {/* Projects Section */}
       <div className={styles.projectsContainer}>
         {projects
           .filter(

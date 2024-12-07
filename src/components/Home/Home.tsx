@@ -1,16 +1,17 @@
 // Home.tsx
 import React from "react";
+import Image from "next/image"; // Import the Next.js Image component
 import styles from "./Home.module.css";
 
 const Home = () => {
   return (
     <section className={styles.home}>
-      {/* Left part with text */}
+      {/* Left Section: Text Introduction */}
       <div className={styles.leftPart}>
         <div className={styles.textSection}>
-          <h1>Hello, I'm</h1>
+          <h1>Hello, I&apos;m</h1> {/* Escape the single quote here */}
           <h3 className={styles.name}>Baslael Workineh</h3>
-          <h3>I'm a Web Developer</h3>
+          <h3>I&apos;m a Web Developer</h3> {/* Escape the single quote here */}
           <p className={styles.paragraph}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
             odio. Praesent libero. Sed cursus ante dapibus diam.
@@ -19,15 +20,19 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Right part with animated visual */}
+      {/* Right Section: Animated Visual */}
       <div className={styles.rightPart}>
         <div className={styles.animatedVisual}>
           <div className={styles.animatedCircle}>
             <div className={styles.innerCircle}></div>
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF2yaox2cALIq_yyd-9qEyovEsficJr7X9QQ&s"
-              alt="Your Image"
+            {/* Using Next.js optimized Image component */}
+            <Image
+              src="/images/html-image.png"
+              alt="Your Portrait"
               className={styles.image}
+              width={150} // Set an appropriate image width
+              height={150} // Set an appropriate image height
+              layout="responsive"
             />
           </div>
         </div>

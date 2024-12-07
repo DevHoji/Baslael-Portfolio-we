@@ -2,8 +2,9 @@
 
 import React, { useState } from "react";
 import styles from "./Testimonial.module.css";
-import { FaStar } from "react-icons/fa";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+
+// Placeholder for the stars using Unicode character ✮
+const Star = () => <span style={{ color: "#FFD700" }}>✮</span>;
 
 const Testimonial = () => {
   const testimonials = [
@@ -11,8 +12,7 @@ const Testimonial = () => {
       id: 1,
       name: "Alex John",
       role: "UI Designer",
-      imageUrl:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoiH359Pmpd_9buQNQ81cci3TYGxZcussxwg&s",
+      imageUrl: "/images/html-image.png",
       testimonial:
         "Working with this team was an amazing experience. They delivered beyond my expectations and were super easy to work with.",
       rating: 5,
@@ -22,8 +22,7 @@ const Testimonial = () => {
       id: 2,
       name: "Jane Smith",
       role: "Frontend Developer",
-      imageUrl:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw0PDKrErulLlbJkbv5KtsCeICczdgJSyurA&s",
+      imageUrl: "/images/html-image.png",
       testimonial:
         "The team was extremely professional and brought innovative ideas to the table. I couldn’t be happier with the results.",
       rating: 4,
@@ -33,8 +32,7 @@ const Testimonial = () => {
       id: 3,
       name: "John Doe",
       role: "Back-end Developer",
-      imageUrl:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_xO4UktfIe6YAE0bSQ1nbm8VJwY7gh5_NjA&s",
+      imageUrl: "/images/html-image.png",
       testimonial:
         "Exceptional work! The team understood our needs and provided an amazing solution that elevated our brand.",
       rating: 5,
@@ -44,12 +42,14 @@ const Testimonial = () => {
 
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
 
+  // Go to the next testimonial
   const nextTestimonial = () => {
     setCurrentTestimonialIndex(
       (prevIndex) => (prevIndex + 1) % testimonials.length
     );
   };
 
+  // Go to the previous testimonial
   const prevTestimonial = () => {
     setCurrentTestimonialIndex((prevIndex) =>
       prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
@@ -70,12 +70,13 @@ const Testimonial = () => {
           <h3>What Clients Say?</h3>
           <h4>Read My Clients Feedback</h4>
           <p>
-            "I had the best experience working with this team. Their attention
-            to detail and commitment to excellence made all the difference."
+            &quot;I had the best experience working with this team. Their
+            attention to detail and commitment to excellence made all the
+            difference.&quot;
           </p>
           <p>
-            "They were not only professional but also friendly. I highly
-            recommend their services."
+            &quot;They were not only professional but also friendly. I highly
+            recommend their services.&quot;
           </p>
           <button className={styles.hireButton}>
             <span className={styles.icon}>👤</span> Hire Me Now
@@ -96,11 +97,11 @@ const Testimonial = () => {
                   <p className={styles.role}>{currentTestimonial.role}</p>
                 </div>
                 <p className={styles.testimonialText}>
-                  "{currentTestimonial.testimonial}"
+                  &quot;{currentTestimonial.testimonial}&quot;
                 </p>
                 <div className={styles.rating}>
                   {[...Array(currentTestimonial.rating)].map((_, index) => (
-                    <FaStar key={index} className={styles.star} />
+                    <Star key={index} />
                   ))}
                   <span className={styles.ratingCount}>
                     {" "}
@@ -111,11 +112,30 @@ const Testimonial = () => {
             </div>
 
             <div className={styles.navigation}>
-              <FaArrowLeft className={styles.arrow} onClick={prevTestimonial} />
-              <FaArrowRight
-                className={styles.arrow}
+              <button
+                className={styles.arrowButton}
+                onClick={prevTestimonial}
+                style={{
+                  cursor: "pointer",
+                  background: "transparent",
+                  border: "none",
+                  fontSize: "18px",
+                }}
+              >
+                ◁
+              </button>
+              <button
+                className={styles.arrowButton}
                 onClick={nextTestimonial}
-              />
+                style={{
+                  cursor: "pointer",
+                  background: "transparent",
+                  border: "none",
+                  fontSize: "18px",
+                }}
+              >
+                ▷
+              </button>
             </div>
           </div>
         </div>

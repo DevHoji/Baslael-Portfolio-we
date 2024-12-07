@@ -9,8 +9,7 @@ const blogs = [
       "Learn the basics of React hooks and how they help manage state and side effects in functional components.",
     link: "/blog/understanding-react-hooks",
     date: "21 January, 2024",
-    backgroundImage:
-      "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLvP8GLLrieb_k9FWcDyW_qh-aG688dOG-3A&s')",
+    backgroundImage: "url('/images/html-image.png')",
   },
   {
     id: 2,
@@ -19,8 +18,7 @@ const blogs = [
       "A deep dive into CSS Grid and Flexbox to build modern, responsive layouts without much hassle.",
     link: "/blog/mastering-css-grid-and-flexbox",
     date: "18 January, 2024",
-    backgroundImage:
-      "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLvP8GLLrieb_k9FWcDyW_qh-aG688dOG-3A&s')",
+    backgroundImage: "url('/images/html-image.png')",
   },
   {
     id: 3,
@@ -29,8 +27,7 @@ const blogs = [
       "An easy-to-follow guide on setting up your first Next.js application and understanding its file structure.",
     link: "/blog/building-your-first-nextjs-app",
     date: "15 January, 2024",
-    backgroundImage:
-      "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLvP8GLLrieb_k9FWcDyW_qh-aG688dOG-3A&s')",
+    backgroundImage: "url('/images/html-image.png')",
   },
 ];
 
