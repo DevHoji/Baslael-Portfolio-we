@@ -13,10 +13,10 @@ const Resume = () => {
         <h1 className={styles.backgroundText}>RESUME</h1>
       </div>
 
-      {/* Resume Section with Two Columns */}
-      <div className={styles.resumeMainContainer}>
-        {/* Left Column */}
-        <div className={styles.resumeColumn}>
+      {/* Resumes Section */}
+      <div className={styles.resumeBoxesContainer}>
+        {/* Left Column with Vertical Line */}
+        <div className={styles.column}>
           <div className={styles.verticalLine}>
             <span className={styles.circle} style={{ top: "0%" }}></span>
             <span className={styles.circle} style={{ top: "33%" }}></span>
@@ -42,7 +42,7 @@ const Resume = () => {
           </div>
 
           <div className={styles.resumeBox}>
-            <h3 className={styles.resumeTitle}>Master&apos;s Degree</h3>
+            <h3 className={styles.resumeTitle}>Master's Degree</h3>
             <h4 className={styles.degree}>Harvard University</h4>
             <p className={styles.description}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
@@ -51,8 +51,8 @@ const Resume = () => {
           </div>
         </div>
 
-        {/* Right Column */}
-        <div className={styles.resumeColumn}>
+        {/* Right Column with Vertical Line */}
+        <div className={styles.column}>
           <div className={styles.verticalLine}>
             <span className={styles.circle} style={{ top: "0%" }}></span>
             <span className={styles.circle} style={{ top: "33%" }}></span>
@@ -61,7 +61,7 @@ const Resume = () => {
 
           {[...Array(3)].map((_, index) => (
             <div key={index} className={styles.resumeBox}>
-              <h3 className={styles.resumeTitle}>Bachelor&apos;s Degree</h3>
+              <h3 className={styles.resumeTitle}>Bachelor's Degree</h3>
               <h4 className={styles.degree}>Sample University</h4>
               <p className={styles.description}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
@@ -83,24 +83,14 @@ const Resume = () => {
         {/* Skills List */}
         <div className={styles.skillsList}>
           {[
-            { skill: "HTML", percentage: 90, img: "/path-to-html-image.png" },
-            { skill: "CSS", percentage: 80, img: "/path-to-css-image.png" },
-            { skill: "JavaScript", percentage: 85, img: "/path-to-js-image.png" },
-            { skill: "React", percentage: 75, img: "/path-to-react-image.png" },
-            { skill: "Node.js", percentage: 70, img: "/path-to-node-image.png" },
-            { skill: "Python", percentage: 80, img: "/path-to-python-image.png" },
+            { skill: "HTML", percentage: 90 },
+            { skill: "CSS", percentage: 80 },
+            { skill: "JavaScript", percentage: 85 },
+            { skill: "React", percentage: 75 },
+            { skill: "Node.js", percentage: 70 },
+            { skill: "Python", percentage: 80 },
           ].map((item, index) => (
             <div key={index} className={styles.skillItem}>
-              {/* Optimized image with Next.js's Image */}
-              <div className={styles.skillIcon}>
-                <Image
-                  src={item.img}
-                  alt={item.skill}
-                  width={30}
-                  height={30}
-                  layout="responsive"
-                />
-              </div>
               <div className={styles.skillName}>{item.skill}</div>
               <div className={styles.progressContainer}>
                 <div
@@ -114,7 +104,7 @@ const Resume = () => {
         </div>
       </div>
 
-      {/* Stats Section */}
+      {/* New Stats Section */}
       <div className={styles.statsSection}>
         <div className={styles.statItem}>
           <div className={styles.number}>3K</div>
