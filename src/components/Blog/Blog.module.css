@@ -4,11 +4,13 @@
   align-items: center;
   padding: 60px 20px;
   background-color: #f9f9f9;
+  box-sizing: border-box;
 }
 
 .heading {
   text-align: center;
   margin-bottom: 50px;
+  font-size: 2rem;
 }
 
 .latestPost {
@@ -23,13 +25,18 @@
   font-weight: bold;
   color: white;
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin-bottom: 20px;
 }
 
+/* Blog list responsiveness */
 .blogList {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .blogItem {
@@ -105,6 +112,43 @@
   margin-top: 10px;
 }
 
+/* Media Queries for Responsive Design */
+
+/* Mobile Phones (Smallest screens) */
+@media (max-width: 480px) {
+  .blogItem {
+    width: 90%;
+    height: 300px;
+  }
+
+  .date,
+  .blogContent {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .blogItem h3 {
+    font-size: 1.2rem;
+  }
+
+  .blogItem p {
+    font-size: 0.9rem;
+  }
+
+  .readMore {
+    font-size: 0.9rem;
+  }
+
+  .horizontalLine {
+    height: 0.5px;
+  }
+
+  .latestPost {
+    font-size: 1.2rem;
+  }
+}
+
+/* Small Mobile to Tablet */
 @media (max-width: 768px) {
   .blogList {
     flex-direction: column;
@@ -113,5 +157,68 @@
 
   .blogItem {
     width: 80%;
+    height: auto;
+  }
+
+  .blogItem h3,
+  .blogItem p {
+    font-size: 1.1rem;
+  }
+
+  .readMore {
+    font-size: 1rem;
+  }
+
+  .horizontalLine {
+    height: 1px;
+  }
+}
+
+/* Tablet to Small Laptops */
+@media (max-width: 1024px) {
+  .blogList {
+    justify-content: space-between;
+  }
+
+  .blogItem {
+    width: 40%;
+    height: 350px;
+  }
+
+  .blogItem h3,
+  .blogItem p {
+    font-size: 1.2rem;
+  }
+
+  .readMore {
+    font-size: 1rem;
+  }
+
+  .horizontalLine {
+    height: 1px;
+  }
+}
+
+/* Desktop (Default/ Larger screens) */
+@media (min-width: 1025px) {
+  .blogList {
+    justify-content: space-evenly;
+  }
+
+  .blogItem {
+    width: 300px;
+    height: 350px;
+  }
+
+  .blogItem h3 {
+    font-size: 1.5rem;
+  }
+
+  .blogItem p {
+    font-size: 1rem;
+  }
+
+  .readMore {
+    font-size: 1.1rem;
   }
 }

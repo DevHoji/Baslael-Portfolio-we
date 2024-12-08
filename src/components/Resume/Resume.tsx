@@ -103,6 +103,26 @@ const Resume = () => {
           ))}
         </div>
       </div>
+
+      {/* New Stats Section */}
+      <div className={styles.statsSection}>
+        <div className={styles.statItem}>
+          <div className={styles.number}>3K</div>
+          <div className={styles.label}>Projects Done</div>
+        </div>
+        <div className={styles.statItem}>
+          <div className={styles.number}>98+</div>
+          <div className={styles.label}>Happy Clients</div>
+        </div>
+        <div className={styles.statItem}>
+          <div className={styles.number}>13</div>
+          <div className={styles.label}>Awards Won</div>
+        </div>
+        <div className={styles.statItem}>
+          <div className={styles.number}>10+</div>
+          <div className={styles.label}>Years Experience</div>
+        </div>
+      </div>
     </section>
   );
 };

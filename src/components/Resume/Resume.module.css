@@ -190,7 +190,7 @@
 }
 /* Stats Section */
 .statsSection {
-  background-image: url('/images/html-image.png'); /* Tech/coding image */
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPmyZwJInCmGB8TPABxzYX7P4e_Ddli26P9g&s'); /* Tech/coding image */
   background-size: 100% auto; /* Cover full width, height will auto scale */
   background-position: center;
   background-repeat: no-repeat;
@@ -203,6 +203,7 @@
   color: white;
   min-height: 300px; /* Minimum height of the section */
 }
+
 
 
 
@@ -238,5 +239,13 @@
     text-align: center;
   }
 }
+.number {
+  font-size: 2rem;
+  font-weight: bold;
+}
 
+.label {
+  font-size: 1rem;
+  color: #777;
+}
 

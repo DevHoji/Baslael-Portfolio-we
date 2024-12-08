@@ -13,7 +13,6 @@ import Footer from "~/components/Footer/Footer";
 const Page = () => {
   return (
     <div>
-      <Header />
       <Home /> {/* Add Home component here */}
       <About />
       <Resume /> {/* Add Resume component here */}
@@ -21,7 +20,6 @@ const Page = () => {
       <Portfolio /> {/* Add Portfolio component here */}
       <Testimonial />
       <Blog />
-      <Footer />
     </div>
   );
 };

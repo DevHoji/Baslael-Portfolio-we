@@ -84,6 +84,10 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 100%;
 }
+.testimonialCard:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
 
 .profile {
    display: flex;
