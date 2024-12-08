@@ -68,7 +68,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <section className={styles.portfolioSection}>
+    <section id="portfolio" className={styles.portfolioSection}>
       {/* Header Section */}
       <div className={styles.textSection}>
         <h2 className={styles.latestWork}>Latest Work</h2>

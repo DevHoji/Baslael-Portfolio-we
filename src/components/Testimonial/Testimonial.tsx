@@ -59,7 +59,7 @@ const Testimonial = () => {
   const currentTestimonial = testimonials[currentTestimonialIndex];
 
   return (
-    <section className={styles.testimonialSection}>
+    <section id="testimonial" className={styles.testimonialSection}>
       <div className={styles.heading}>
         <h1>TESTIMONIAL</h1>
         <h2>Client Review</h2>

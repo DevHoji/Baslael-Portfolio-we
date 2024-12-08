@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 50px 20px;
-  background-color: white;
+  background-color: #2B2B2B;
   font-family: 'Poppins', sans-serif; /* Apply the Poppins font */
   margin-top: 80px; /* Add margin-top to create a gap between the header and home section */
 }

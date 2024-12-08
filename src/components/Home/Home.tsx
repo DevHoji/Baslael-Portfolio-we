@@ -5,7 +5,7 @@ import styles from "./Home.module.css";
 
 const Home = () => {
   return (
-    <section className={styles.home}>
+    <section id="home" className={styles.home}>
       {/* Left Section: Text Introduction */}
       <div className={styles.leftPart}>
         <div className={styles.textSection}>

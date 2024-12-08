@@ -6,7 +6,7 @@ import styles from "./Resume.module.css";
 
 const Resume = () => {
   return (
-    <section className={styles.resumeSection}>
+    <section id="resume" className={styles.resumeSection}>
       {/* Title Section */}
       <div className={styles.titleContainer}>
         <h2 className={styles.myResume}>My Resume</h2>

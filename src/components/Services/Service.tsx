@@ -12,7 +12,7 @@ const Service = () => {
   };
 
   return (
-    <section className={styles.servicesSection}>
+    <section id="services" className={styles.servicesSection}>
       <div className={styles.titleContainer}>
         <h2 className={styles.sectionTitle}>SERVICES</h2>
         <h3 className={styles.subtitle}>What I Do?</h3>

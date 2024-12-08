@@ -33,7 +33,7 @@ const blogs = [
 
 const Blog = () => {
   return (
-    <section className={styles.blogSection}>
+    <section id="blog" className={styles.blogSection}>
       <div className={styles.heading}>
         <h2 className={styles.latestPost}>Latest Post</h2>
         <h1 className={styles.blogTitle}>BLOGS</h1>

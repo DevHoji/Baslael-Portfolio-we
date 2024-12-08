@@ -4,16 +4,22 @@ import React, { useState } from "react";
 import styles from "./Header.module.css";
 import { FaBars, FaTimes } from "react-icons/fa"; // Import icons for burger and cancel
 
-const Header = () => {
-  const [activeTab, setActiveTab] = useState("home");
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+const Header: React.FC = () => {
+  const [activeTab, setActiveTab] = useState<string>("home");
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
-  const handleTabClick = (tab: string) => {
+  const handleTabClick = (tab: string): void => {
     setActiveTab(tab);
     setIsMenuOpen(false); // Close menu when a link is clicked
+
+    // Scroll to the corresponding section
+    const section = document.getElementById(tab);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
-  const toggleMenu = () => {
+  const toggleMenu = (): void => {
     setIsMenuOpen((prev) => !prev); // Toggle the menu state
   };
 
@@ -52,7 +58,10 @@ const Header = () => {
             <li key={tab}>
               <a
                 href={`#${tab}`}
-                onClick={() => handleTabClick(tab)}
+                onClick={(e) => {
+                  e.preventDefault(); // Prevent default link behavior
+                  handleTabClick(tab);
+                }}
                 className={activeTab === tab ? styles.active : ""}
               >
                 {tab.charAt(0).toUpperCase() + tab.slice(1)}
